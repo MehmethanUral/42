@@ -5,15 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/10 22:42:34 by mural             #+#    #+#             */
-/*   Updated: 2026/08/10 22:42:34 by mural            ###   ########.fr       */
+/*   Created: 2026/08/10 13:42:40 by mural             #+#    #+#             */
+/*   Updated: 2026/08/11 16:21:55 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include    "libft.h"
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {
-    write(fd, s, ft_strlen(s));
-    write(fd, "\n", 1);
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }

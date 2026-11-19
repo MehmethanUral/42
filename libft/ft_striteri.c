@@ -5,23 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/10 22:41:00 by mural             #+#    #+#             */
-/*   Updated: 2026/08/10 22:41:00 by mural            ###   ########.fr       */
+/*   Created: 2026/08/10 11:57:42 by mural             #+#    #+#             */
+/*   Updated: 2026/08/11 16:22:46 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include    "libft.h"
+#include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-    unsigned int	i;
+	size_t	i;
 
-    if (!s || !f)
-        return;
-    i = 0;
-    while (s[i])
-    {
-        f(i, &s[i]);
-        i++;
-    }
+	if (!s || !f)
+		return ;
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }

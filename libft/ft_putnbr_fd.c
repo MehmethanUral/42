@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/10 22:42:56 by mural             #+#    #+#             */
-/*   Updated: 2026/08/10 22:42:56 by mural            ###   ########.fr       */
+/*   Created: 2026/08/10 14:22:37 by mural             #+#    #+#             */
+/*   Updated: 2026/08/11 16:30:30 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include    "libft.h"
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

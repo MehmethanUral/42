@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/09 04:24:00 by mural             #+#    #+#             */
-/*   Updated: 2026/08/09 04:24:00 by mural            ###   ########.fr       */
+/*   Created: 2026/08/05 12:02:03 by mural             #+#    #+#             */
+/*   Updated: 2026/08/12 17:15:33 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char	*str;
-	unsigned char	ch;
 	size_t			i;
+	unsigned char	*p1;
+	unsigned char	ch;
 
-	str = (unsigned char *)s;
+	p1 = (unsigned char *)s;
 	ch = (unsigned char)c;
 	i = 0;
 	while (i < n)
 	{
-		if (str[i] == ch)
-			return ((void *)&str[i]);
+		if (p1[i] == ch)
+			return ((void *)&p1[i]);
 		i++;
 	}
 	return (NULL);

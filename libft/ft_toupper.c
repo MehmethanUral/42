@@ -5,17 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/09 03:38:51 by mural             #+#    #+#             */
-/*   Updated: 2026/08/09 03:39:24 by mural            ###   ########.fr       */
+/*   Created: 2026/08/04 11:39:47 by mural             #+#    #+#             */
+/*   Updated: 2026/10/06 14:50:21 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (c - 32);
-  else
-      return (c);
+	return (c);
 }

@@ -5,19 +5,19 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/09 03:10:32 by mural             #+#    #+#             */
-/*   Updated: 2026/08/09 03:10:32 by mural            ###   ########.fr       */
+/*   Created: 2026/08/04 11:55:18 by mural             #+#    #+#             */
+/*   Updated: 2026/08/11 11:11:10 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const	char *s)
 {
-    size_t i;
+	size_t	i;
 
-    i = 0;
-    while (s[i] != '\0')
-        i++;
-    return (i);
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }

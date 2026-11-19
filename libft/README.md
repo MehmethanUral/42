@@ -1,17 +1,12 @@
-*This project has been created as part of the 42 curriculum by mural*
+*This project has been created as part of the 42 curriculum by mural.*
 
 # Description
-Libft is a custom C standard library reimplementation built for the 42 curriculum. The goal is to deepen understanding of low-level C programming by recreating common libc utilities, plus additional helpers and a linked list API. The output is a static library, `libft.a`, that can be linked into other C projects.
+libft is a custom C standard library reimplementation built for the 42 curriculum. The goal is to deepen understanding of low-level C programming by recreating common libc utilities, plus additional helpers and linked list API. The output is a static library, `libft.a`, that can be linked into other C projects.
 
 # Instructions
 ## Build
 ```sh
 make
-```
-
-## Bonus
-```sh
-make bonus
 ```
 
 ## Clean
@@ -58,12 +53,14 @@ The library is split into classic libc-style helpers, extra string/memory utilit
 `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd`.
 
 ## Linked list
-`ft_lstnew`, `ft_lstadd_front`, `ft_lstadd_back`, `ft_lstsize`, `ft_lstlast`, `ft_lstdelone`, `ft_lstclear`, `ft_lstiter`, `ft_lstmap`.
+`ft_lstnew`, `ft_lstadd_front`, `ft_lstadd_back`, `ft_lstsize`, `ft_lstlast`,
+`ft_lstdelone`, `ft_lstclear`, `ft_lstiter`, `ft_lstmap`.
 
 # Resources
 ## References
 - 42 libft subject PDF and evaluation page.
 - `man` pages for the C standard library.
+- Peer discussions for clarifications.
 
 ## AI usage
-AI tools were used exclusively for learning and understanding the theoretical concepts behind the C library functions, and to assist in drafting this README file. No AI was used to write or generate any part of the source code, ensuring all implementations are strictly my own work.
+I used AI to get ideas about what some functions do and to help draft the README. No project code was generated or modified by AI.

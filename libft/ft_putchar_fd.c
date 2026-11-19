@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/10 22:41:41 by mural             #+#    #+#             */
-/*   Updated: 2026/08/10 22:41:41 by mural            ###   ########.fr       */
+/*   Created: 2026/08/10 13:31:32 by mural             #+#    #+#             */
+/*   Updated: 2026/08/11 16:22:17 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include    "libft.h"
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {
-    write(fd, &c, 1);
+	write(fd, &c, 1);
 }

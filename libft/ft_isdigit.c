@@ -5,17 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/09 03:04:36 by mural             #+#    #+#             */
-/*   Updated: 2026/08/09 03:04:36 by mural            ###   ########.fr       */
+/*   Created: 2026/08/04 11:27:57 by mural             #+#    #+#             */
+/*   Updated: 2026/10/06 14:49:31 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-    if (c >= '0' && c <= '9')
-        return (1);
-    else
-        return (0);
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
 }

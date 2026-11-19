@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/09 03:49:34 by mural             #+#    #+#             */
-/*   Updated: 2026/08/09 03:49:34 by mural            ###   ########.fr       */
+/*   Created: 2026/08/06 10:54:38 by mural             #+#    #+#             */
+/*   Updated: 2026/08/12 17:20:08 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,17 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t		i;
-	unsigned char	*p1;
-	unsigned char	*p2;
+	unsigned char	*str1;
+	unsigned char	*str2;
+	size_t			i;
 
-	p1 = (unsigned char *)s1;
-	p2 = (unsigned char *)s2;
-
-	if (n == 0)
-		return (0);
+	str1 = (unsigned char *)s1;
+	str2 = (unsigned char *)s2;
 	i = 0;
-	while (i < n - 1 && p1[i] != '\0' && p2[i] != '\0')
-	{
-		if (p1[i] != p2[i])
-			return (p1[i] - p2[i]);
+	while (str1[i] == str2[i] && str1[i] && str2[i] && i < n)
 		i++;
-	}
-	return (p1[i] - p2[i]);
+	if (i == n)
+		return (0);
+	else
+		return (str1[i] - str2[i]);
 }

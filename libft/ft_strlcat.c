@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/09 03:24:31 by mural             #+#    #+#             */
-/*   Updated: 2026/08/09 03:24:31 by mural            ###   ########.fr       */
+/*   Created: 2026/08/05 13:53:48 by mural             #+#    #+#             */
+/*   Updated: 2026/08/12 12:48:24 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	j;
 
 	dst_len = 0;
-	while (dst[dst_len] && dst_len < size)
+	while (dst_len < size && dst[dst_len])
 		dst_len++;
 	src_len = ft_strlen(src);
 	if (dst_len == size)
-		return (size + src_len);
+		return (src_len + size);
 	i = dst_len;
 	j = 0;
-	while (src[j] && i < size - 1)
+	while (i < size - 1 && src[j])
 	{
 		dst[i] = src[j];
 		i++;

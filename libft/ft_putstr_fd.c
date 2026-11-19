@@ -5,14 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/10 22:42:09 by mural             #+#    #+#             */
-/*   Updated: 2026/08/10 22:42:09 by mural            ###   ########.fr       */
+/*   Created: 2026/08/10 13:37:07 by mural             #+#    #+#             */
+/*   Updated: 2026/08/11 16:22:05 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include    "libft.h"
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {
-    write(fd, s, ft_strlen(s));
+	size_t	i;
+
+	i = 0;
+	while (s[i])
+	{
+		ft_putchar_fd(s[i], fd);
+		i++;
+	}
 }

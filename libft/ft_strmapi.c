@@ -5,28 +5,28 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/10 20:53:54 by mural             #+#    #+#             */
-/*   Updated: 2026/08/10 20:53:54 by mural            ###   ########.fr       */
+/*   Created: 2026/08/10 11:34:09 by mural             #+#    #+#             */
+/*   Updated: 2026/08/12 17:43:05 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include    "libft.h"
+#include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	        *result;
-	unsigned int	i;
+	char	*str;
+	size_t	i;
 
 	if (!s || !f)
 		return (NULL);
-	result = ft_strdup(s);
-	if (!result)
+	str = ft_strdup(s);
+	if (!str)
 		return (NULL);
 	i = 0;
-	while (s[i])
+	while (str[i])
 	{
-		result[i] = f(i, s[i]);
+		str[i] = f(i, str[i]);
 		i++;
 	}
-	return (result);
+	return (str);
 }

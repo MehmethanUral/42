@@ -5,17 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/09 03:06:14 by mural             #+#    #+#             */
-/*   Updated: 2026/08/09 03:06:14 by mural            ###   ########.fr       */
+/*   Created: 2026/08/04 11:29:33 by mural             #+#    #+#             */
+/*   Updated: 2026/10/06 14:49:28 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-    if (c >= 0 && c <= 127)
-        return (1);
-    else
-        return (0);
+	if (c >= 0 && c <= 127)
+		return (1);
+	else
+		return (0);
 }

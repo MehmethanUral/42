@@ -5,17 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/09 03:06:42 by mural             #+#    #+#             */
-/*   Updated: 2026/08/09 03:06:42 by mural            ###   ########.fr       */
+/*   Created: 2026/08/04 11:30:58 by mural             #+#    #+#             */
+/*   Updated: 2026/10/06 14:49:34 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if (c >= 32 && c <= 126)
-        return (1);
-    else
-        return (0);
+	if (c >= 32 && c <= 126)
+		return (1);
+	else
+		return (0);
 }

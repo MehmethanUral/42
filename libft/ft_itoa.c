@@ -5,51 +5,56 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/10 20:16:57 by mural             #+#    #+#             */
-/*   Updated: 2026/08/10 20:16:57 by mural            ###   ########.fr       */
+/*   Created: 2026/08/10 10:37:40 by mural             #+#    #+#             */
+/*   Updated: 2026/08/12 09:16:11 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count_digits(long n)
+static	int	count_digit(long n)
 {
-    int count;
+	int	count;
 
-    count = 1;
-    while (n / 10)
-    {
-        n /= 10;
-        count++;
-    }
-    return (count);
+	count = 1;
+	while (n / 10)
+	{
+		n /= 10;
+		count++;
+	}
+	return (count);
+}
+
+static void	fill_digit(char *result, long value, int len, int negative)
+{
+	result[len] = '\0';
+	while (len-- > negative)
+	{
+		result[len] = '0' + (value % 10);
+		value /= 10;
+	}
+	if (negative)
+		result[0] = '-';
 }
 
 char	*ft_itoa(int n)
 {
-    char    *result;
-    long    value;
-    int     negative;
-    int     len;
+	char	*result;
+	long	value;
+	int		negative;
+	int		len;
 
-    value = n;
-    negative = 0;
-    if (value < 0)
-    {
-        negative = 1;
-        value = -value;
-    }
-    len = count_digits(value) + negative;
-    result = malloc(len + 1);
-    if (!result)
-        return (NULL);
-    result[len] = '\0';
-    while (len-- > negative)
-    {
-        result[len] = '0' + (value % 10);
-        value /= 10;
-    }
-    if (negative)
-        result[0] = '-';
-    return (result);
+	value = n;
+	negative = 0;
+	if (value < 0)
+	{
+		negative = 1;
+		value = -value;
+	}
+	len = count_digit(value) + negative;
+	result = malloc(len + 1);
+	if (!result)
+		return (NULL);
+	fill_digit(result, value, len, negative);
+	return (result);
 }

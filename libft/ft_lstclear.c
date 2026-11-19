@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/10 23:20:00 by mural             #+#    #+#             */
-/*   Updated: 2026/08/10 23:20:00 by mural            ###   ########.fr       */
+/*   Created: 2026/08/11 10:08:16 by mural             #+#    #+#             */
+/*   Updated: 2026/08/11 16:20:33 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list	*tmp;
+	t_list	*temp;
 
 	if (!lst)
 		return ;
 	while (*lst)
 	{
-		tmp = (*lst)->next;
+		temp = (*lst)->next;
 		ft_lstdelone(*lst, del);
-		*lst = tmp;
+		*lst = temp;
 	}
 }

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mural <mural@student.42istanbul.com.tr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/09 05:05:36 by mural             #+#    #+#             */
-/*   Updated: 2026/08/09 05:05:36 by mural            ###   ########.fr       */
+/*   Created: 2026/08/06 12:27:27 by mural             #+#    #+#             */
+/*   Updated: 2026/08/11 16:28:11 by mural            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,18 @@
 
 char	*ft_strdup(const char *s1)
 {
-    size_t	len;
-    char	*copy;
+	char	*dest;
+	size_t	i;
 
-    len = ft_strlen(s1);
-    copy = malloc(len + 1);
-    if (!copy)
-        return (NULL);
-    ft_memcpy(copy, s1, len + 1);
-    return (copy);
+	dest = malloc(sizeof(char) * (ft_strlen(s1) + 1));
+	if (!dest)
+		return (NULL);
+	i = 0;
+	while (s1[i])
+	{
+		dest[i] = s1[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
